@@ -1,15 +1,15 @@
 module github.com/GFW-knocker/AndroidLibXrayLite
 
-go 1.22.2
+go 1.22.4
 
 require (
-	github.com/GFW-knocker/Xray-core v1.8.13-mahsa-r2
-	golang.org/x/mobile v0.0.0-20231127183840-76ac6878050a
-	golang.org/x/sys v0.20.0
+	github.com/GFW-knocker/Xray-core v1.8.23-mahsa-r1
+	golang.org/x/mobile v0.0.0-20240506190922-a1a533f289d3
+	ggolang.org/x/sys v0.18.0
 )
 
 require (
-	github.com/GFW-knocker/wireguard v1.0.4 // indirect
+	github.com/GFW-knocker/wireguard v1.0.6 // indirect
 	github.com/OmarTariq612/goech v0.0.0-20240405204721-8e2e1dafd3a0 // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/cloudflare/circl v1.3.8 // indirect
