@@ -116,6 +116,11 @@ func (v *V2RayPoint) StopLoop() (err error) {
 	return
 }
 
+func (v *V2RayPoint) TerminateByExit() {
+	log.Println("OS Exit called")
+	os.Exit(0)
+}
+
 // Delegate Funcation
 func (v V2RayPoint) QueryStats(tag string, direct string) int64 {
 	if v.statsManager == nil {
@@ -201,7 +206,6 @@ func InitV2Env(envPath string, key string) {
 		return os.Open(path)
 	}
 }
-
 
 func MeasureOutboundDelay(ConfigureFileContent string, url string) (int64, error) {
 
